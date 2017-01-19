@@ -57,7 +57,6 @@ public class App {
       customer(4, "Russ", "Miles", asList("rmiles@email.com"))
     ).forEach(c -> customers.put(c.getId(), c));
 
-    // our lambda just gets forwarded to Map#get(Integer)
     return new CustomerRepository() {
 
       @Override
